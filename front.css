@@ -1,0 +1,348 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #777;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* Product Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #444;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    flex: 1; /* Each image takes 50% width */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-left {
+    background-image: url('https://theme-dawn-demo.myshopify.com/cdn/shop/files/141569803_417219312901458_4638470652865432174_n.jpg?v=1637107084&width=3840');
+}
+
+.hero-right {
+    background-image: url('https://theme-dawn-demo.myshopify.com/cdn/shop/files/Shoes_and_bag.jpg?v=1732889921&width=3840');
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay covering both images */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    background: #cc5500;
+}
+
+.utility-bar {
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center-align text */
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    height: 50px; /* Adjust height as needed */
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.1); /* Optional bottom border */
+}
+
+.announcement-bar__message {
+    font-size: 1.1rem; /* Adjust font size as needed */
+    color: rgb(var(--color-foreground)); /* Uses your theme's foreground color */
+}
+.Block{
+    align-items: center;
+    display: flex;
+    justify-content: center;        
+    padding: 20px;
+    background-color: #f3f3f3;
+    font-size:x-large;
+
+}
+.block-section-1{
+    color: #000000;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+.block-section-2{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #343434;
+    background-color: #f3f3f3;
+}
+.product-grid {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.product-card {
+    text-align: left;
+
+   
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    align-items:self-start;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+ /* Make section full width */
+ .section {
+    padding-top: 10%;
+    display: flex;
+    gap: 20px;
+    width: 250%;
+ 
+}
+
+/* LEFT SIDE (Big Image) */
+.left {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left img {
+    width: 170%;
+    height: 500%;
+    padding-right: 50%;
+}
+
+.left p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.left a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* RIGHT SIDE (Two Small Images) */
+.right {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .right {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .right img {
+        width: 48%;
+        height: auto;
+    }
+}
+.video-section {
+    display: block; 
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+  }
+
+  .video-cover {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .video-container {
+    display: none; /* Hide video initially */
+    width: 100%;
+  }
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
